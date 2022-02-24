@@ -58,26 +58,26 @@ export const Main = () => {
     }, [token]);
 
     return (<>
-        {!isLoggedIn && <h1 className="app-title">Welcome to Fitness Trackr</h1>}
+        {!isLoggedIn && <h1 className="greeting">Welcome to Fitness Trackr</h1>}
 
         {isLoggedIn ? (<>
             <h1 className="greeting">WELCOME {user.username}</h1>
             <div className='header'>
-            <button><Link to="/my_routines">MY Routines</Link></button>
-            <button><Link to="/routines">Routines</Link></button>
-            <button><Link to="/create_routine">Add Routine</Link></button>
-            <button><Link to="/activities">Activities</Link></button>
-            <button ><Link to="/create_activity">Add Activity</Link></button>
-            <button onClick={logOut}>Log Out</button>
+            <button className="headerButton" ><Link to="/my_routines">My Routines</Link></button>
+            <button className="headerButton" ><Link to="/routines">Routines</Link></button>
+            <button className="headerButton" ><Link to="/create_routine">Add Routine</Link></button>
+            <button className="headerButton" ><Link to="/activities">Activities</Link></button>
+            <button className="headerButton" ><Link to="/create_activity">Add Activity</Link></button>
+            <button className="headerButton"  onClick={logOut}>Log Out</button>
             </div>
         </>)
         : ( <>
             <div className='header'>
-            <button className="register-button"><Link to="/account/register">Register</Link></button>
-            <button className="login-button"><Link to="/account/login">Login</Link></button>
+            <button className="headerButton"><Link to="/account/register">Register</Link></button>
+            <button className="headerButton"><Link to="/account/login">Login</Link></button>
             <br></br>
-            <button className="routines-button"><Link to="/routines">Routines</Link></button>
-            <button className="activities-button"><Link to="/activities">Activities</Link></button>
+            <button className="headerButton"><Link to="/routines">Routines</Link></button>
+            <button className="headerButton"><Link to="/activities">Activities</Link></button>
             </div>
         </>)}
 

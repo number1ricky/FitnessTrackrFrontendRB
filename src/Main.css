@@ -1,6 +1,6 @@
 body {
     background-color:white;
-    background-image: url('https://cdn1.vectorstock.com/i/1000x1000/87/45/city-sport-club-gym-interior-cartoon-vector-23518745.jpg');
+    background-image: url('https://t3.ftcdn.net/jpg/02/65/07/74/360_F_265077477_ZGCVj8sIdqcwSjiAAYYap6AY0ukgdry3.jpg');
     box-sizing: border-box;
     text-align: center;
     color: black;
@@ -8,15 +8,20 @@ body {
 
 .accountTitle {
     background-color: deeppink;
+    font-family: Bebas Neue;
     color: aquamarine;
     margin-left: 100px;
     margin-right: 100px;
 }
 
 .greeting {
-    background-color:yellow;
-    color: aquamarine;
-    opacity: 50%;
+    font-family: Bebas Neue;
+    background-color:pink;
+    opacity: 80%;
+    padding: 12vh 0;
+    font-size: 4vw;
+    text-align: center;
+    text-decoration: underline;
 }
 
 
@@ -28,18 +33,30 @@ body {
     height: 40px;
 }
 
+.headerButton {
+    padding: fit-content;
+    margin: 0 2vw 2vw 2vw;
+    border: #333 1px solid;
+    font-size: 2vw;
+    font-family: Bebas Neue;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 2px 2px 3px #333;
+    background-color:aqua
+}
+
 .app-title{
     font-family: Bebas Neue;
     font-size: 40pt;
 }
 
 .submissionForm {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    height: 10px;
-    background-color: chocolate;
-    opacity: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 5vw 15vw;
+    margin-bottom: 10vh;
 }
 
 .addActSubmission {
@@ -114,8 +131,7 @@ body {
 
 .routinesTitle{
     font-size: 24pt;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: 100px;
+    font-family: Bebas Neue;
     margin-right: 100px;
     background-color:bisque;
     height: 72px;
@@ -137,7 +153,7 @@ body {
 
 .activitiesTitle{
     font-size: 24pt;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Bebas Neue;
     margin-left: 100px;
     margin-right: 100px;
     background-color:bisque;
