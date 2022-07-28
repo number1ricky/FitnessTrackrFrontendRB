@@ -10,6 +10,7 @@ const MyRoutine = ({routine}) => {
         {!routine && <Link to="/routines">Back to Routines</Link>}
         {routine.activities?.map((activity) => {
             return  (<>
+                
                 <div>Activity:{activity.name}</div>
                 <div>Activity Id: {activity.id}</div>
                 <div>Description: {activity.description}</div>
@@ -17,6 +18,7 @@ const MyRoutine = ({routine}) => {
                 <div>Count: {activity.count}</div>
                 <div>Routine Activity:{activity.routineActivityId}</div>
                 <div>RoutineId: {activity.routineId}</div>
+                
             </>)
         })}
     </>

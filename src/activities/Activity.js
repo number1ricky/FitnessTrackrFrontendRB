@@ -25,11 +25,12 @@ activityToRender.username
 :
 null
 }
+<div className='cardHolderActivities'>
 <div><b>Name:</b> {activityToRender.name}</div>
 <div><b>Id:</b>{activityToRender.id}</div>
 <div><b>Count:</b>{activityToRender.count}</div>
 <div><b>Duration:</b>{activityToRender.duration}</div>
-
+</div>
 {!activity ? <Link to="/activities">Back to Activities</Link> : null}
 
 {activity.activities?.map((routine) => {return  (

@@ -152,7 +152,15 @@ body {
     border: grey 5px;
 }
 
+.cardHolderActivities {
+    height: fit-content;
+    width: 30%;
+}
+
 #activityContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: white;
     margin-left: 100px;
     margin-right: 100px;
