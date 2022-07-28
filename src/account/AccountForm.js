@@ -34,22 +34,22 @@ export const AccountForm = ({ setToken }) => {
     return (<>
         <h1 className='accountTitle'>{title}</h1>
         <div className='submissionForm'>
-        <form onSubmit={handleSubmit}>
-            <input
+        <form className='formHolder' onSubmit={handleSubmit}>
+            <input className='subFormInput'
                 type="text"
                 placeholder="username"
                 value={username}
                 onChange={(event) => setUsername(event.target.value)}>
             </input>
-            <input
+            <input className='subFormInput'
                 type="password"
                 placeholder="password"
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}>
             </input>
-            <button type="submit">{title}</button>
+            <button id="regLoginInput" type="submit">{title}</button>
         </form>
-        <button>
+        <button id="homeButton">
             <Link to="/">Home</Link>
         </button>
         </div>

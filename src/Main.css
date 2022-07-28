@@ -1,6 +1,7 @@
 body {
     background-color:white;
     background-image: url('https://t3.ftcdn.net/jpg/02/65/07/74/360_F_265077477_ZGCVj8sIdqcwSjiAAYYap6AY0ukgdry3.jpg');
+    background-repeat: no-repeat;
     box-sizing: border-box;
     text-align: center;
     color: black;
@@ -52,11 +53,24 @@ body {
 }
 
 .submissionForm {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    padding: 5vw 15vw;
+    display: flex;
+    flex-direction: column;
+    background-color:lightpink;
+    align-items: center;
     margin-bottom: 10vh;
+}
+
+.subFormInput {
+    width: 50%;
+    margin: 1rem;
+    box-shadow: 2px 2px 3px #333;
+}
+
+#regLoginInput {
+    margin: 1rem;
+    height: 50%;
+    width: 50%;
+    box-shadow: 2px 2px 3px #333;
 }
 
 .addActSubmission {
@@ -159,4 +173,20 @@ body {
     background-color:bisque;
     height: 72px;
     border: grey 5px;
+}
+
+#homeButton {
+    margin: 2rem;
+    padding: 1rem;
+    width: 40%;
+    box-shadow: 2px 2px 3px #333;
+}
+
+.formHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-height: 20vh;
 }

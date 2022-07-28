@@ -27,11 +27,8 @@ return (
     <>
 <button className="LargeButton">
     <Link to="/">Home</Link>
-        </button>
-<div></div>
-
-
-
+</button>
+    <div></div>
 <h2 className="routinesTitle">Routines</h2>
 <div id ="routineContainer"> {routines?.map((routine) => (
 <div key={routine.id}>
