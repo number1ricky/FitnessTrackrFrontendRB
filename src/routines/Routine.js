@@ -15,7 +15,6 @@ const Routine = ({routine, routines, token, user, isLoggedIn}) => {
 
 return ( 
 <>
-        
 {routineToRender.username
 ? 
 <div><b>Submitted by:</b>{routineToRender.username }</div>
@@ -30,17 +29,19 @@ null}
 {routine.activities?.map((activity) => {
   return  (
 <>
-    <div><i>Activity:{activity.name}</i></div>
-    <div><i>Activity Id: {activity.id}</i></div>
-    <div><i>Description: {activity.description}</i></div>
-    <div><i>Duration: {activity.duration}</i></div>
-    <div><i>Count: {activity.count}</i></div>
-    <div><i>Routine Activity:{activity.routineActivityId}</i></div>
-    <div><i>RoutineId: {activity.routineId}</i></div>
+<div className='routineActivitiesBox'>
+    <div id="activityName"><b>Activity: {activity.name}</b></div>
+    <div id="activityID"><i>Activity Id: {activity.id}</i></div>
+    <div id="activityDescription"><i>Description: {activity.description}</i></div>
+    <div id="activityDuration"><i>Duration: {activity.duration}</i></div>
+    <div id="activityCount"><b><i>Count: {activity.count}</i></b></div>
+    <div id="routineActivity"><i>Routine Activity:{activity.routineActivityId}</i></div>
+    <div id="routineID"><i>RoutineId: {activity.routineId}</i></div>
+</div>
 </>
 )
 })}
-</>       
+</>    
 );
 };
 

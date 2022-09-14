@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MyRoutine = ({routine}) => {
-    return <>
+    return (<>
         { routine.creatorName && <div><b>Submitted by:</b>{ routine.creatorName }</div> }
         <div><b>Routine Name:</b>{routine.name}</div>
         <div><b>Goal:</b>{routine.goal}</div>
@@ -21,7 +21,7 @@ const MyRoutine = ({routine}) => {
                 
             </>)
         })}
-    </>
+    </>)
 }
 
 export default MyRoutine;

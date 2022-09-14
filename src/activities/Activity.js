@@ -28,17 +28,18 @@ null
 <div className='cardHolderActivities'>
 <div><b>Name:</b> {activityToRender.name}</div>
 <div><b>Id:</b>{activityToRender.id}</div>
-<div><b>Count:</b>{activityToRender.count}</div>
-<div><b>Duration:</b>{activityToRender.duration}</div>
+<div><b>Description:</b>{activityToRender.description}</div>
 </div>
 {!activity ? <Link to="/activities">Back to Activities</Link> : null}
 
 {activity.activities?.map((routine) => {return  (
 <>
+<div className='routineActivityContainer'>
 <div><b>Name:</b> {routine.name}</div>
 <div><b>Count:</b>{routine.count}</div>
 <div><b>Description:</b>{routine.description}</div>
 <div><b>Goal:</b> {routine.goal}</div>
+</div>
 </>
 )
 })}
